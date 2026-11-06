@@ -1,0 +1,26 @@
+{
+  "_comment": "Fictional example profile. The real profile stays outside this repository.",
+  "name": "Alex Sample",
+  "city": "Florianopolis",
+  "state": "SC",
+  "country": "Brasil",
+  "accepts_remote": true,
+  "onsite_cities": ["Florianopolis", "Sao Jose"],
+  "availability": { "start": "12:00", "end": "22:00" },
+  "education": {
+    "status": "enrolled",
+    "field": "Ciencia da Computacao",
+    "expected_graduation": 2028
+  },
+  "max_seniority": "junior",
+  "min_monthly_salary": 1500,
+  "tech_years": {
+    "python": 0,
+    "javascript": 0,
+    "sql": 0,
+    "html": 0,
+    "css": 0,
+    "git": 0
+  },
+  "_tech_years_note": "0 means academic or self-directed practice with no professional experience. The number is what a form may be told, never an inflated one."
+}
