@@ -1,0 +1,25 @@
+# Personal data never enters this repository.
+private/
+profile.json
+truth_rules.json
+cv-master*
+cv-variants/
+uploads/
+applications/
+application-tracker.csv
+*.pdf
+*.docx
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
