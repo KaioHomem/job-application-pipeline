@@ -59,6 +59,33 @@ jobs:
           PYTHONPATH: src
         run: python -m pipeline report --tracker examples/tracker.sample.csv
 
+  parity:
+    name: Python and JavaScript must agree
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Regenerate the oracle from the Python filters
+        run: python scripts/gen_parity_expected.py
+
+      - name: The committed oracle must still match Python
+        run: |
+          if ! git diff --exit-code tests/fixtures/parity_expected.json; then
+            echo "::error::screening.py changed but tests/fixtures/parity_expected.json was not regenerated"
+            exit 1
+          fi
+
+      - name: The JavaScript port must match the oracle
+        run: node --test "web/tests/*.test.mjs"
+
   no-personal-data:
     runs-on: ubuntu-latest
     steps:

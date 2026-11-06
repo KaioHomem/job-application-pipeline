@@ -1,0 +1,6 @@
+{
+  "name": "rejection-machine-web",
+  "private": true,
+  "type": "module",
+  "description": "Static explorable. No dependencies: tests run on node:test."
+}
