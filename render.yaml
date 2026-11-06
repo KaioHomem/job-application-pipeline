@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: job-application-pipeline-mcp
+    runtime: docker
+    plan: free
+    healthCheckPath: /mcp
+    envVars:
+      - key: PORT
+        value: 8000

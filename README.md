@@ -205,6 +205,34 @@ variant and rejecting an inflated one, orphan-line detection, the proof
 requirement, duplicate submission, and a check that the gate leaves its input
 byte-identical.
 
+## Ask it questions instead
+
+The same engine is also an MCP server, so an assistant can interrogate the
+funnel directly rather than reading a summary of it.
+
+```bash
+pip install -r mcp_server/requirements.txt
+python mcp_server/server.py              # stdio, for a local client
+python mcp_server/server.py --http       # streamable HTTP on /mcp
+```
+
+| Tool | Answers |
+|---|---|
+| `funnel_summary` | counts by status and by the first filter that fired, plus what the record *cannot* answer |
+| `why_skipped(code)` | the postings a given filter stopped first, anonymised |
+| `simulate_profile(changes)` | re-screens the detailed set under an edited candidate and names what the change freed and what it cost |
+| `screen_posting(posting)` | runs the nine filters over a posting you describe |
+
+Every tool states its own scope. `funnel_summary` says plainly that the 189
+postings cannot be re-screened, and `simulate_profile` says it is answering
+over 21, not 189 — a model reading this should not be able to overclaim from
+it by accident.
+
+The answers live in `mcp_server/tools.py`, standard library only and unit
+tested without a server. The SDK appears in `mcp_server/server.py` and nowhere
+else. That dependency departs from the zero-dependency rule deliberately;
+[docs/DECISIONS.md](docs/DECISIONS.md) #5 records why and what it costs.
+
 ## Scope
 
 This repository is the decision core, written to be read: screening, the truth

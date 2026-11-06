@@ -1,0 +1,3 @@
+# The one dependency outside the standard library, scoped to mcp_server/.
+# docs/DECISIONS.md #5 records why it exists and what it costs.
+mcp>=2.0.0

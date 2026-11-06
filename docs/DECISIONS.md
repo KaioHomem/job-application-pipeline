@@ -90,3 +90,31 @@ the tool's.
 
 **Scraping.** Fetching and parsing boards is a separate concern with a separate
 failure mode. This repository takes already-parsed postings.
+
+---
+
+## 5. The MCP server breaks decision 4, on purpose
+
+**What was decided:** `mcp_server/` depends on the `mcp` SDK and is meant to run
+on a host. Decision 4 above says standard library only, and the design's own
+non-goals say no backend. This is a departure, made deliberately and with the
+owner's explicit sign-off, and recorded here rather than quietly committed.
+
+**What it buys:** a reviewer who is not a developer can attach the funnel to
+their own assistant and ask it questions. Every other "portfolio as an MCP
+server" project found while researching this requires a local install in a
+desktop client, which is exactly the barrier that makes them unused. Hosted
+over streamable HTTP, there is no install.
+
+**What it costs:** a host that can go down, a dependency to keep current, and a
+decision record that no longer reads "zero dependencies" without an asterisk.
+The SDK also renamed `FastMCP` to `MCPServer` in 2.x during this build, which is
+the maintenance this buys in miniature.
+
+**How the cost is contained:** the exception is scoped to `mcp_server/`.
+`src/pipeline/` stays standard-library only. Everything that decides an answer
+lives in `mcp_server/tools.py`, which imports nothing beyond the standard
+library and the pipeline, and is unit-tested without starting a server. The SDK
+appears in exactly one file, `mcp_server/server.py`, which is transport and
+nothing else. If the SDK breaks or the host dies, the answers still work and
+the tests still run.

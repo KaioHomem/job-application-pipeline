@@ -86,6 +86,29 @@ jobs:
       - name: The JavaScript port must match the oracle
         run: node --test web/tests/*.test.mjs
 
+  mcp-server:
+    name: The MCP server must start and serve its tools
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install the SDK
+        run: python -m pip install --upgrade pip -r mcp_server/requirements.txt
+      - name: The four tools must register
+        run: |
+          PYTHONPATH=src:. python - <<'EOF'
+          import asyncio, importlib.util
+          spec = importlib.util.spec_from_file_location("srv", "mcp_server/server.py")
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+          names = sorted(t.name for t in asyncio.run(module.server.list_tools()))
+          expected = ["funnel_summary", "screen_posting", "simulate_profile", "why_skipped"]
+          assert names == expected, f"{names} != {expected}"
+          print("tools:", names)
+          EOF
+
   deploy:
     name: Publish the explorable
     needs: [test, parity, no-personal-data]
