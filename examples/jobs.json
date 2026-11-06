@@ -1,0 +1,111 @@
+[
+  {
+    "company": "Northwind Labs",
+    "title": "Estagio em Desenvolvimento de Software",
+    "url": "https://example.com/jobs/northwind-intern",
+    "source": "example",
+    "work_model": "remote",
+    "country": "Brasil",
+    "schedule": { "start": "13:00", "end": "19:00" },
+    "seniority": "intern",
+    "required_tech": ["python", "sql"],
+    "monthly_salary": 1800
+  },
+  {
+    "company": "Contoso Delivery",
+    "title": "Analista de Suporte Junior",
+    "url": "https://example.com/jobs/contoso-support",
+    "source": "example",
+    "work_model": "remote",
+    "country": "Brasil",
+    "schedule": { "start": "09:00", "end": "16:00" },
+    "seniority": "junior",
+    "required_tech": ["sql"]
+  },
+  {
+    "company": "Fabrikam Systems",
+    "title": "Desenvolvedor Front-end Junior",
+    "url": "https://example.com/jobs/fabrikam-frontend",
+    "source": "example",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "junior",
+    "required_tech": ["react", "typescript"]
+  },
+  {
+    "company": "Tailspin Logistica",
+    "title": "Auxiliar de TI",
+    "url": "https://example.com/jobs/tailspin-it",
+    "source": "example",
+    "work_model": "onsite",
+    "city": "Curitiba",
+    "state": "PR",
+    "seniority": "junior",
+    "required_tech": ["git"]
+  },
+  {
+    "company": "Adventure Works",
+    "title": "Estagio em Dados",
+    "url": "https://example.com/jobs/adventure-data",
+    "source": "example",
+    "work_model": "onsite",
+    "city": "Florianopolis",
+    "state": "SC",
+    "schedule": { "start": "14:00", "end": "20:00" },
+    "seniority": "intern",
+    "required_tech": ["sql", "python"]
+  },
+  {
+    "company": "Proseware",
+    "title": "Engenheiro de Software Senior",
+    "url": "https://example.com/jobs/proseware-senior",
+    "source": "example",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "senior",
+    "required_tech": ["python"],
+    "required_years": { "python": 5 }
+  },
+  {
+    "company": "Litware",
+    "title": "Analista de Sistemas Junior",
+    "url": "https://example.com/jobs/litware-analyst",
+    "source": "example",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "junior",
+    "required_tech": ["sql"],
+    "requires_completed_degree": true
+  },
+  {
+    "company": "Wide World Importers",
+    "title": "Estagio em Marketing Digital",
+    "url": "https://example.com/jobs/wwi-marketing",
+    "source": "example",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "intern",
+    "accepted_fields": ["Marketing", "Publicidade"]
+  },
+  {
+    "company": "Globex Remote",
+    "title": "Junior Backend Engineer",
+    "url": "https://example.com/jobs/globex-backend",
+    "source": "example",
+    "work_model": "remote",
+    "country": "Portugal",
+    "seniority": "junior",
+    "required_tech": ["python"]
+  },
+  {
+    "company": "Trey Research",
+    "title": "Estagio em Suporte",
+    "url": "https://example.com/jobs/trey-support",
+    "source": "example",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "intern",
+    "required_tech": ["git"],
+    "monthly_salary": 900
+  }
+]
