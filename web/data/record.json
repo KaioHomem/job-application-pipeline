@@ -1,0 +1,1892 @@
+[
+ {
+  "id": "Empresa #062",
+  "role_family": "estagio",
+  "source": "gupy",
+  "date": "2026-09-08",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #101",
+  "role_family": "estagio",
+  "source": "solides",
+  "date": "2026-09-09",
+  "status": "needs_human_action",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #101",
+  "role_family": "estagio",
+  "source": "solides",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #101",
+  "role_family": "estagio",
+  "source": "solides",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #061",
+  "role_family": "estagio",
+  "source": "gupy",
+  "date": "2026-09-08",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "field",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #097",
+  "role_family": "dev",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #008",
+  "role_family": "dev",
+  "source": "gupy",
+  "date": "2026-09-08",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #093",
+  "role_family": "dev",
+  "source": "solides",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #018",
+  "role_family": "dev",
+  "source": "gupy",
+  "date": "2026-09-08",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #016",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #094",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #047",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #117",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #060",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #131",
+  "role_family": "qa",
+  "source": "gupy",
+  "date": "2026-09-08",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #082",
+  "role_family": "qa",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #004",
+  "role_family": "qa",
+  "source": "solides",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #027",
+  "role_family": "qa",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #139",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-08",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #094",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-08",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #063",
+  "role_family": "estagio",
+  "source": "gupy",
+  "date": "2026-09-08",
+  "status": "rejected",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #111",
+  "role_family": "estagio",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #011",
+  "role_family": "estagio",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #133",
+  "role_family": "estagio",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #003",
+  "role_family": "estagio",
+  "source": "solides",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #094",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #087",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #097",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #023",
+  "role_family": "dev",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "needs_human_action",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #065",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #065",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #030",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #105",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "affirmative",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #096",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #060",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #060",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #084",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "rejected",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #114",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #119",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #119",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #141",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #068",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #108",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #065",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #110",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #100",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #123",
+  "role_family": "qa",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #065",
+  "role_family": "qa",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #125",
+  "role_family": "qa",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #134",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "degree",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #142",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #020",
+  "role_family": "dados",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #040",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #025",
+  "role_family": "dev",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #023",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "field",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #023",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #023",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #075",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #129",
+  "role_family": "suporte",
+  "source": "remotive",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #080",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #035",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #019",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #089",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #060",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #098",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #058",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #062",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #120",
+  "role_family": "qa",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "affirmative",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #017",
+  "role_family": "qa",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #002",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #106",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #130",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #106",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #122",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #021",
+  "role_family": "outro",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #002",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #049",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #127",
+  "role_family": "outro",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #041",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #001",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #121",
+  "role_family": "outro",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #017",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #017",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #009",
+  "role_family": "outro",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #022",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #026",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #042",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #117",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #113",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "experience",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #135",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #086",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #048",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #104",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #017",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #014",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #033",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #032",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #033",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #076",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #007",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #095",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #126",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #126",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #138",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #055",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #074",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #051",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #023",
+  "role_family": "dev",
+  "source": "atsdirect",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #097",
+  "role_family": "estagio",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #005",
+  "role_family": "estagio",
+  "source": "solides",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #005",
+  "role_family": "estagio",
+  "source": "solides",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "affirmative",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #053",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #099",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #083",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #079",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-10",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #015",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #036",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "needs_human_action",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #012",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-09",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #034",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #017",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "experience",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #017",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "experience",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #115",
+  "role_family": "suporte",
+  "source": "gupy",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #054",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #118",
+  "role_family": "qa",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #052",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #124",
+  "role_family": "dados",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #056",
+  "role_family": "dados",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #037",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #031",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #072",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #059",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #017",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "experience",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #017",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "experience",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #102",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #043",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #045",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #064",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #028",
+  "role_family": "suporte",
+  "source": "atsdirect",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #090",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-15",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "closed",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #024",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "needs_human_action",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #015",
+  "role_family": "estagio",
+  "source": "gupy",
+  "date": "2026-09-10",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #069",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #102",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #052",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #031",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #078",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #128",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #034",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #054",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #037",
+  "role_family": "suporte",
+  "source": "linkedin",
+  "date": "2026-09-10",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #006",
+  "role_family": "qa",
+  "source": "breezy",
+  "date": "2026-09-11",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #057",
+  "role_family": "estagio",
+  "source": "iel",
+  "date": "2026-09-15",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #039",
+  "role_family": "estagio",
+  "source": "indeed",
+  "date": "2026-09-15",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #140",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-15",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #092",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-15",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #088",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-15",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #064",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-15",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #137",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-15",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #038",
+  "role_family": "estagio",
+  "source": "linkedin/inhire",
+  "date": "2026-09-15",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #077",
+  "role_family": "dev",
+  "source": "gupy",
+  "date": "2026-09-15",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #109",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-15",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #103",
+  "role_family": "estagio",
+  "source": "workday",
+  "date": "2026-09-15",
+  "status": "needs_human_action",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #090",
+  "role_family": "outro",
+  "source": "quickin",
+  "date": "2026-09-15",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #077",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-15",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #132",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-15",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #044",
+  "role_family": "estagio",
+  "source": "email",
+  "date": "2026-09-15",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #112",
+  "role_family": "outro",
+  "source": "gupy",
+  "date": "2026-09-15",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #106",
+  "role_family": "outro",
+  "source": "senior-portal",
+  "date": "2026-09-15",
+  "status": "needs_human_action",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #050",
+  "role_family": "outro",
+  "source": "indeed",
+  "date": "2026-09-21",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #073",
+  "role_family": "outro",
+  "source": "indeed/gupy",
+  "date": "2026-09-21",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #097",
+  "role_family": "dados",
+  "source": "indeed",
+  "date": "2026-09-21",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #039",
+  "role_family": "dados",
+  "source": "indeed",
+  "date": "2026-09-21",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "closed",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #107",
+  "role_family": "dev",
+  "source": "greenhouse",
+  "date": "2026-09-24",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #013",
+  "role_family": "estagio",
+  "source": "sesame",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #067",
+  "role_family": "dev",
+  "source": "notion-form",
+  "date": "2026-09-24",
+  "status": "applied",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #085",
+  "role_family": "estagio",
+  "source": "ada.tech",
+  "date": "2026-09-24",
+  "status": "needs_human_action",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #064",
+  "role_family": "estagio",
+  "source": "smartrecruiters",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": null,
+  "code_source": null
+ },
+ {
+  "id": "Empresa #116",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #071",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #066",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #092",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #136",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "field",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #091",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #070",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #046",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "experience",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #010",
+  "role_family": "estagio",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "field",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #017",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "schedule",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #029",
+  "role_family": "dev",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "tech",
+  "code_source": "classified"
+ },
+ {
+  "id": "Empresa #081",
+  "role_family": "outro",
+  "source": "linkedin",
+  "date": "2026-09-24",
+  "status": "skipped",
+  "codes": [],
+  "primary_code": "location",
+  "code_source": "classified"
+ }
+]

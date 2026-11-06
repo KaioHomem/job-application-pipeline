@@ -70,23 +70,40 @@ data and are not in this repository.
 | Rejected by a hard filter, reason recorded | **153** |
 | Stopped for a human (account creation, video, technical test) | **7** |
 
-What the filters actually rejected, over those 153:
+What rejected those 153, as far as the data can say:
 
 | Reason | Count |
 |---|---|
-| Location — onsite or hybrid outside the commutable area | 113 |
-| Schedule — shift collides with the availability window | 25 |
-| Central technology with no evidence in the profile | 6 |
-| Required professional experience above the profile | 2 |
-| Closed or expired posting | 1 |
-| Field of study not accepted | 1 |
-| Other | 5 |
+| Location — onsite or hybrid outside the commutable area | 60 |
+| **Not attributable** — the note does not name a filter | 39 |
+| Central technology with no evidence in the profile | 19 |
+| Schedule — shift collides with the availability window | 19 |
+| Required professional experience above the profile | 6 |
+| Field of study not accepted | 4 |
+| Restricted to an affirmative-action group | 3 |
+| Closed or expired posting | 2 |
+| Completed degree required | 1 |
+
+**Read that table with its caveat.** Most of these rows predate the bracketed
+reason codes, so their reason is Portuguese prose and the bucket is *derived*
+by the keyword rules in `scripts/anonymize_corpus.py`, not emitted by a filter.
+The published record marks each row `recorded` or `classified` so the two are
+never conflated, and 39 rows resisted classification rather than being forced
+into a bucket. An earlier draft of this README reported 113 and 25 for the top
+two rows and claimed they were 90% of the work; that came from a looser pattern
+where the bare substring `local` matched notes like "local de trabalho", and
+it was wrong.
 
 Two findings worth more than the totals:
 
-**Location and schedule did 90% of the work.** Not skills. Most postings were
-impossible for reasons printed on the posting itself, which is exactly the
-filtering a human does badly at volume and stops doing by posting forty.
+**Location and schedule still lead, at 79 of 153.** Not skills. Roughly half of
+all rejections — and 69% of the ones that could be attributed at all — came
+down to facts printed on the posting itself, which is exactly the filtering a
+human does badly at volume and stops doing by posting forty.
+
+**The unattributable 39 are why the tracker now records codes.** A reason kept
+only as prose cannot be counted later. `Reason(code, message)` exists because
+of this table.
 
 **The proof rule exists because an audit found drift.** Of the 27 applications,
 26 cite a proof artifact and 16 have a captured confirmation screen stored
