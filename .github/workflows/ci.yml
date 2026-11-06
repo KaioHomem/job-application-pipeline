@@ -71,7 +71,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
 
       - name: Regenerate the oracle from the Python filters
         run: python scripts/gen_parity_expected.py
@@ -84,7 +84,7 @@ jobs:
           fi
 
       - name: The JavaScript port must match the oracle
-        run: node --test "web/tests/*.test.mjs"
+        run: node --test web/tests/*.test.mjs
 
   deploy:
     name: Publish the explorable
