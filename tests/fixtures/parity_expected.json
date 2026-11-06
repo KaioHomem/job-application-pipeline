@@ -1,0 +1,818 @@
+[
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/01-clean-remote-afternoon",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/02-morning-shift",
+    "verdict": "skip",
+    "codes": [
+      "schedule"
+    ],
+    "messages": [
+      "Shift 09:00-16:00 falls outside the availability window 12:00-22:00."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/03-tech-no-evidence-no-schedule",
+    "verdict": "skip",
+    "codes": [
+      "tech"
+    ],
+    "messages": [
+      "Requires react, typescript; no evidence in the profile."
+    ],
+    "flags": [
+      "schedule?"
+    ]
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/04-onsite-elsewhere",
+    "verdict": "skip",
+    "codes": [
+      "location"
+    ],
+    "messages": [
+      "Onsite in Curitiba; outside the commutable area."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/05-onsite-commutable",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/06-senior-and-years",
+    "verdict": "skip",
+    "codes": [
+      "seniority",
+      "experience"
+    ],
+    "messages": [
+      "Posting is senior; the profile targets up to junior.",
+      "Below the required experience: python (0 of 5 years)."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/07-degree-required",
+    "verdict": "skip",
+    "codes": [
+      "degree"
+    ],
+    "messages": [
+      "A completed degree is mandatory; the candidate is still enrolled."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/08-field-mismatch",
+    "verdict": "skip",
+    "codes": [
+      "field"
+    ],
+    "messages": [
+      "Accepted fields are Marketing, Publicidade; the candidate studies Ciencia da Computacao."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/09-remote-other-country",
+    "verdict": "skip",
+    "codes": [
+      "location"
+    ],
+    "messages": [
+      "Remote from Portugal; the profile works from Brasil."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/10-below-floor",
+    "verdict": "skip",
+    "codes": [
+      "salary"
+    ],
+    "messages": [
+      "Pays 900; the floor is 1500."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/11-closed",
+    "verdict": "skip",
+    "codes": [
+      "closed"
+    ],
+    "messages": [
+      "Posting is closed."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/12-affirmative",
+    "verdict": "skip",
+    "codes": [
+      "affirmative"
+    ],
+    "messages": [
+      "Restricted to an affirmative-action group."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/13-hybrid-unpublished-shift",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "seniority"
+    ],
+    "messages": [
+      "Hybrid in Sao Paulo; outside the commutable area.",
+      "Posting is mid; the profile targets up to junior."
+    ],
+    "flags": [
+      "schedule?"
+    ]
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/14-clean-no-schedule",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": [
+      "schedule?"
+    ]
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/15-unknown-seniority",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/16-onsite-no-city",
+    "verdict": "skip",
+    "codes": [
+      "location"
+    ],
+    "messages": [
+      "Onsite in an unpublished city; outside the commutable area."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/17-overnight-shift",
+    "verdict": "skip",
+    "codes": [
+      "schedule"
+    ],
+    "messages": [
+      "Shift 20:00-23:30 falls outside the availability window 12:00-22:00."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/18-many-failures-at-once",
+    "verdict": "skip",
+    "codes": [
+      "closed",
+      "affirmative",
+      "location",
+      "schedule",
+      "seniority",
+      "degree",
+      "tech",
+      "experience",
+      "salary"
+    ],
+    "messages": [
+      "Posting is closed.",
+      "Restricted to an affirmative-action group.",
+      "Onsite in Manaus; outside the commutable area.",
+      "Shift 07:30-17:30 falls outside the availability window 12:00-22:00.",
+      "Posting is mid; the profile targets up to junior.",
+      "A completed degree is mandatory; the candidate is still enrolled.",
+      "Requires linux, active directory; no evidence in the profile.",
+      "Below the required experience: linux (0 of 2 years).",
+      "Pays 1200; the floor is 1500."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/19-no-salary-published",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "afternoon_student",
+    "url": "https://example.com/parity/20-window-edges",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/01-clean-remote-afternoon",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/02-morning-shift",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/03-tech-no-evidence-no-schedule",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": [
+      "schedule?"
+    ]
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/04-onsite-elsewhere",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/05-onsite-commutable",
+    "verdict": "skip",
+    "codes": [
+      "location"
+    ],
+    "messages": [
+      "Onsite in Florianopolis; outside the commutable area."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/06-senior-and-years",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/07-degree-required",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/08-field-mismatch",
+    "verdict": "skip",
+    "codes": [
+      "field"
+    ],
+    "messages": [
+      "Accepted fields are Marketing, Publicidade; the candidate studies Ciencia da Computacao."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/09-remote-other-country",
+    "verdict": "skip",
+    "codes": [
+      "location"
+    ],
+    "messages": [
+      "Remote from Portugal; the profile works from Brasil."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/10-below-floor",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/11-closed",
+    "verdict": "skip",
+    "codes": [
+      "closed"
+    ],
+    "messages": [
+      "Posting is closed."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/12-affirmative",
+    "verdict": "skip",
+    "codes": [
+      "affirmative"
+    ],
+    "messages": [
+      "Restricted to an affirmative-action group."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/13-hybrid-unpublished-shift",
+    "verdict": "skip",
+    "codes": [
+      "location"
+    ],
+    "messages": [
+      "Hybrid in Sao Paulo; outside the commutable area."
+    ],
+    "flags": [
+      "schedule?"
+    ]
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/14-clean-no-schedule",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": [
+      "schedule?"
+    ]
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/15-unknown-seniority",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/16-onsite-no-city",
+    "verdict": "skip",
+    "codes": [
+      "location"
+    ],
+    "messages": [
+      "Onsite in an unpublished city; outside the commutable area."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/17-overnight-shift",
+    "verdict": "skip",
+    "codes": [
+      "schedule"
+    ],
+    "messages": [
+      "Shift 20:00-23:30 falls outside the availability window 07:00-23:00."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/18-many-failures-at-once",
+    "verdict": "skip",
+    "codes": [
+      "closed",
+      "affirmative",
+      "location",
+      "field",
+      "tech",
+      "experience"
+    ],
+    "messages": [
+      "Posting is closed.",
+      "Restricted to an affirmative-action group.",
+      "Onsite in Manaus; outside the commutable area.",
+      "Accepted fields are Redes; the candidate studies Ciencia da Computacao.",
+      "Requires linux, active directory; no evidence in the profile.",
+      "Below the required experience: linux (0 of 2 years)."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/19-no-salary-published",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "full_day_graduate",
+    "url": "https://example.com/parity/20-window-edges",
+    "verdict": "pass",
+    "codes": [],
+    "messages": [],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/01-clean-remote-afternoon",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "tech",
+      "salary"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00.",
+      "Requires python, sql; no evidence in the profile.",
+      "Pays 1800; the floor is 2000."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/02-morning-shift",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "seniority",
+      "tech"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Posting is junior; the profile targets up to intern.",
+      "Requires sql; no evidence in the profile."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/03-tech-no-evidence-no-schedule",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "seniority",
+      "tech"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Posting is junior; the profile targets up to intern.",
+      "Requires react, typescript; no evidence in the profile."
+    ],
+    "flags": [
+      "schedule?"
+    ]
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/04-onsite-elsewhere",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "seniority",
+      "tech"
+    ],
+    "messages": [
+      "Onsite in Curitiba; outside the commutable area.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00.",
+      "Posting is junior; the profile targets up to intern.",
+      "Requires git; no evidence in the profile."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/05-onsite-commutable",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "tech",
+      "salary"
+    ],
+    "messages": [
+      "Onsite in Florianopolis; outside the commutable area.",
+      "Shift 14:00-20:00 falls outside the availability window 08:00-18:00.",
+      "Requires sql, python; no evidence in the profile.",
+      "Pays 1600; the floor is 2000."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/06-senior-and-years",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "seniority",
+      "tech",
+      "experience"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00.",
+      "Posting is senior; the profile targets up to intern.",
+      "Requires python; no evidence in the profile.",
+      "Below the required experience: python (0 of 5 years)."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/07-degree-required",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "seniority",
+      "degree",
+      "tech"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00.",
+      "Posting is junior; the profile targets up to intern.",
+      "A completed degree is mandatory; the candidate is still enrolled.",
+      "Requires sql; no evidence in the profile."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/08-field-mismatch",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/09-remote-other-country",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "seniority",
+      "tech"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00.",
+      "Posting is junior; the profile targets up to intern.",
+      "Requires python; no evidence in the profile."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/10-below-floor",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "tech",
+      "salary"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00.",
+      "Requires git; no evidence in the profile.",
+      "Pays 900; the floor is 2000."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/11-closed",
+    "verdict": "skip",
+    "codes": [
+      "closed",
+      "location",
+      "schedule",
+      "seniority",
+      "tech"
+    ],
+    "messages": [
+      "Posting is closed.",
+      "Remote, but the profile does not accept remote work.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00.",
+      "Posting is junior; the profile targets up to intern.",
+      "Requires javascript; no evidence in the profile."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/12-affirmative",
+    "verdict": "skip",
+    "codes": [
+      "affirmative",
+      "location",
+      "schedule",
+      "tech"
+    ],
+    "messages": [
+      "Restricted to an affirmative-action group.",
+      "Remote, but the profile does not accept remote work.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00.",
+      "Requires python; no evidence in the profile."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/13-hybrid-unpublished-shift",
+    "verdict": "skip",
+    "codes": [
+      "seniority",
+      "tech"
+    ],
+    "messages": [
+      "Posting is mid; the profile targets up to intern.",
+      "Requires sql; no evidence in the profile."
+    ],
+    "flags": [
+      "schedule?"
+    ]
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/14-clean-no-schedule",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "tech",
+      "salary"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Requires git, sql; no evidence in the profile.",
+      "Pays 1700; the floor is 2000."
+    ],
+    "flags": [
+      "schedule?"
+    ]
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/15-unknown-seniority",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "tech"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00.",
+      "Requires sql; no evidence in the profile."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/16-onsite-no-city",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "tech",
+      "salary"
+    ],
+    "messages": [
+      "Onsite in an unpublished city; outside the commutable area.",
+      "Shift 13:00-19:00 falls outside the availability window 08:00-18:00.",
+      "Requires git; no evidence in the profile.",
+      "Pays 1600; the floor is 2000."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/17-overnight-shift",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "seniority",
+      "tech"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Shift 20:00-23:30 falls outside the availability window 08:00-18:00.",
+      "Posting is junior; the profile targets up to intern.",
+      "Requires git; no evidence in the profile."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/18-many-failures-at-once",
+    "verdict": "skip",
+    "codes": [
+      "closed",
+      "affirmative",
+      "location",
+      "schedule",
+      "seniority",
+      "degree",
+      "tech",
+      "experience",
+      "salary"
+    ],
+    "messages": [
+      "Posting is closed.",
+      "Restricted to an affirmative-action group.",
+      "Onsite in Manaus; outside the commutable area.",
+      "Shift 07:30-17:30 falls outside the availability window 08:00-18:00.",
+      "Posting is mid; the profile targets up to intern.",
+      "A completed degree is mandatory; the candidate is still enrolled.",
+      "Requires linux, active directory; no evidence in the profile.",
+      "Below the required experience: linux (0 of 2 years).",
+      "Pays 1200; the floor is 2000."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/19-no-salary-published",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "tech"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Requires python; no evidence in the profile."
+    ],
+    "flags": []
+  },
+  {
+    "profile": "onsite_only_marketer",
+    "url": "https://example.com/parity/20-window-edges",
+    "verdict": "skip",
+    "codes": [
+      "location",
+      "schedule",
+      "tech",
+      "salary"
+    ],
+    "messages": [
+      "Remote, but the profile does not accept remote work.",
+      "Shift 12:00-22:00 falls outside the availability window 08:00-18:00.",
+      "Requires sql; no evidence in the profile.",
+      "Pays 1500; the floor is 2000."
+    ],
+    "flags": []
+  }
+]
