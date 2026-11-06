@@ -1,0 +1,73 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install pytest
+        run: python -m pip install --upgrade pip pytest
+
+      - name: Run the test suite
+        run: pytest -q
+
+      - name: Screen the example postings
+        env:
+          PYTHONPATH: src
+        run: python -m pipeline screen --profile config/profile.example.json --jobs examples/jobs.json
+
+      - name: The honest CV must pass the gate
+        env:
+          PYTHONPATH: src
+        run: |
+          python -m pipeline validate \
+            --cv examples/cv_sample_pass.txt \
+            --master examples/cv_master.txt \
+            --rules config/truth_rules.example.json
+
+      - name: The inflated CV must be rejected
+        env:
+          PYTHONPATH: src
+        run: |
+          if python -m pipeline validate \
+               --cv examples/cv_sample_fail.txt \
+               --master examples/cv_master.txt \
+               --rules config/truth_rules.example.json; then
+            echo "::error::the gate approved a CV it should have rejected"
+            exit 1
+          fi
+          echo "rejected as expected"
+
+      - name: Print the funnel
+        env:
+          PYTHONPATH: src
+        run: python -m pipeline report --tracker examples/tracker.sample.csv
+
+  no-personal-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail if personal data reaches the repository
+        run: |
+          patterns='[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}|[0-9]{5}-[0-9]{3}|\+55 ?\(?[0-9]{2}\)?[ -]?9[0-9]{4}'
+          if grep -rEIn "$patterns" --exclude-dir=.git .; then
+            echo "::error::a CPF, postal code or phone number pattern was found"
+            exit 1
+          fi
+          echo "clean"
