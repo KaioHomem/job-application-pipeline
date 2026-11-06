@@ -1,0 +1,51 @@
+MASTER CV - Alex Sample (fictional)
+
+This file is the single source of truth. Every line of every generated variant
+must be traceable to a line below. The tailoring step may reorder, translate or
+drop lines. It may never add one.
+
+Alex Sample
+alex.sample@example.com | +55 48 0000-0000 | Florianopolis, SC, Brasil
+github.com/alexsample | alexsample.example.com
+
+PROFESSIONAL SUMMARY
+Computer Science student with hands-on software and web projects using Python, JavaScript, SQL and REST APIs.
+Computer Science student focused on backend foundations, relational databases and service integrations.
+Computer Science student combining technical foundations with prior operational support experience.
+
+TECHNICAL SKILLS
+Languages: Python, JavaScript, Java, HTML, CSS, SQL
+Web development: REST APIs, Bootstrap, responsive interfaces, service integration
+Data: MySQL, PostgreSQL, relational databases, SQL modeling and queries
+Fundamentals: object-oriented programming, data structures, operating systems, computer networks
+Tools: Git, GitHub
+
+PROJECTS
+- Personal portfolio site built with HTML, CSS and JavaScript, with a contact form wired to an email service.
+- Command line study tracker that stores sessions in SQLite and prints a weekly summary.
+- Small REST API in Python used to practise request validation and error handling.
+
+EXPERIENCE
+Sample Retail - Administrative Support
+2022 - 2023
+- Supported administrative, billing and filing routines.
+- Organised documents and kept internal records consistent.
+
+Sample Logistics - Operations Support
+2023 - 2024
+- Tracked stock levels and flagged inconsistencies to the operations lead.
+- Followed internal processes and reported blockers.
+
+EDUCATION
+Federal Institute - BSc Computer Science
+2025 - Present
+Currently enrolled. Expected graduation 2028.
+Coursework in programming, databases, operating systems, networks and web development.
+
+LANGUAGES
+Portuguese: native
+English: advanced, self-reported, no certification held
+
+ACHIEVEMENTS
+- Built and published a personal portfolio site from scratch.
+- Maintains a public GitHub profile with study projects.

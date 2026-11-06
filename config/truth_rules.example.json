@@ -1,0 +1,35 @@
+{
+  "_comment": "Example rules. Each blocked pattern exists because a generator once produced that exact claim.",
+  "section_headers": [
+    "PROFESSIONAL SUMMARY",
+    "TECHNICAL SKILLS",
+    "PROJECTS",
+    "EXPERIENCE",
+    "EDUCATION",
+    "LANGUAGES",
+    "ACHIEVEMENTS"
+  ],
+  "skill_line_prefixes": ["languages", "web development", "data", "fundamentals", "tools"],
+  "in_progress_markers": ["present", "in progress", "currently enrolled"],
+  "confirmed_skills": [
+    "javascript", "python", "java", "html", "css", "sql", "mysql", "postgresql",
+    "relational databases", "sql modeling and queries", "rest apis", "bootstrap",
+    "service integration", "responsive interfaces", "object-oriented programming",
+    "data structures", "operating systems", "computer networks", "git", "github"
+  ],
+  "blocked_patterns": [
+    { "pattern": "\\bsenior\\b|\\bsr\\.?\\b|\\bstaff\\b|\\bprincipal\\b|\\bexpert\\b", "message": "seniority term the candidate cannot claim" },
+    { "pattern": "years of experience", "message": "aggregated professional experience" },
+    { "pattern": "\\d+\\s*%", "message": "invented percentage metric" },
+    { "pattern": "\\d+\\s*x\\s+(more|faster)", "message": "invented multiplier metric" },
+    { "pattern": "(r\\$|us\\$|\\$|eur|usd)\\s*\\d", "message": "invented monetary figure" },
+    { "pattern": "\\d[\\d.,]*\\s*(users|customers|downloads|visits)", "message": "invented audience count" },
+    { "pattern": "\\b(toefl|ielts|cambridge|cefr|c1|c2|b2)\\b", "message": "language certification the candidate does not hold" },
+    { "pattern": "\\b(sap|totvs|oracle|salesforce|zendesk|servicenow)\\b", "message": "enterprise tool not confirmed by the master CV" },
+    { "pattern": "willing to relocate|open to relocation", "message": "relocation promise outside the location policy" }
+  ],
+  "max_words": 500,
+  "max_line_length": 120,
+  "min_sections": 6,
+  "min_bullets": 4
+}

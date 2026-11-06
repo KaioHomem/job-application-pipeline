@@ -1,0 +1,31 @@
+Alex Sample
+alex.sample@example.com | +55 48 0000-0000 | Florianopolis, SC, Brasil
+
+PROFESSIONAL SUMMARY
+Senior backend engineer with 5 years of experience delivering high impact systems.
+Open to relocation.
+
+TECHNICAL SKILLS
+Languages: Python, JavaScript, Go, Rust, SQL
+Data: MySQL, PostgreSQL, Oracle, relational databases
+Tools: Git, GitHub, Salesforce
+
+PROJECTS
+- Rebuilt the checkout flow and increased conversion by 32%.
+- Scaled an internal API to 40.000 users with no downtime.
+- Delivered a reporting tool that saved R$ 120000 per year.
+
+EXPERIENCE
+Sample Logistics - Operations Support
+2023 - 2024
+- Tracked stock levels and flagged inconsistencies to the operations lead.
+
+EDUCATION
+Federal Institute - BSc Computer Science
+2025 - 2026
+
+LANGUAGES
+English: C1 certified
+
+ACHIEVEMENTS
+- Recognised as the top performer of the engineering organisation.

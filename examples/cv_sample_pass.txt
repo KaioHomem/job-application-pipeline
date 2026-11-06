@@ -1,0 +1,40 @@
+Alex Sample
+alex.sample@example.com | +55 48 0000-0000 | Florianopolis, SC, Brasil
+github.com/alexsample | alexsample.example.com
+
+PROFESSIONAL SUMMARY
+Computer Science student focused on backend foundations, relational databases and service integrations.
+
+TECHNICAL SKILLS
+Languages: Python, JavaScript, Java, HTML, CSS, SQL
+Data: MySQL, PostgreSQL, relational databases, SQL modeling and queries
+Web development: REST APIs, Bootstrap, responsive interfaces, service integration
+Fundamentals: object-oriented programming, data structures, operating systems, computer networks
+Tools: Git, GitHub
+
+PROJECTS
+- Small REST API in Python used to practise request validation and error handling.
+- Command line study tracker that stores sessions in SQLite and prints a weekly summary.
+- Personal portfolio site built with HTML, CSS and JavaScript, with a contact form wired to an email service.
+
+EXPERIENCE
+Sample Logistics - Operations Support
+2023 - 2024
+- Tracked stock levels and flagged inconsistencies to the operations lead.
+- Followed internal processes and reported blockers.
+
+Sample Retail - Administrative Support
+2022 - 2023
+- Supported administrative, billing and filing routines.
+
+EDUCATION
+Federal Institute - BSc Computer Science
+2025 - Present
+Currently enrolled. Expected graduation 2028.
+
+LANGUAGES
+Portuguese: native
+English: advanced, self-reported, no certification held
+
+ACHIEVEMENTS
+- Maintains a public GitHub profile with study projects.
