@@ -1,0 +1,339 @@
+[
+  {
+    "id": "Empresa #107",
+    "title": "Junior Software Engineer (Brazil)",
+    "role_family": "dev",
+    "source": "greenhouse",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "junior",
+    "required_tech": [],
+    "monthly_salary": 7500,
+    "recovered_from": "posting still live",
+    "outcome": "applied"
+  },
+  {
+    "id": "Empresa #067",
+    "title": "Backend Developer Junior - Go (Remoto)",
+    "role_family": "dev",
+    "source": "notion-form",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "junior",
+    "required_tech": [],
+    "recovered_from": "posting still live",
+    "outcome": "applied",
+    "note": "The posting states prior professional experience is not required and that personal or academic projects count, so no technology is listed as mandatory."
+  },
+  {
+    "id": "Empresa #064",
+    "title": "Support Intern",
+    "role_family": "estagio",
+    "source": "smartrecruiters",
+    "work_model": "onsite",
+    "city": "Sao Paulo",
+    "state": "SP",
+    "seniority": "intern",
+    "required_tech": [
+      "java",
+      "python",
+      "javascript",
+      "sql"
+    ],
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #071",
+    "title": "Estagio em Suporte ao Cliente (Open Finance)",
+    "role_family": "estagio",
+    "source": "linkedin",
+    "work_model": "remote",
+    "country": "Brasil",
+    "schedule": {
+      "start": "09:00",
+      "end": "16:00"
+    },
+    "seniority": "intern",
+    "required_tech": [],
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #116",
+    "title": "Pessoa Estagiaria em Suporte ao Cliente SaaS (Remoto)",
+    "role_family": "estagio",
+    "source": "linkedin",
+    "work_model": "remote",
+    "country": "Brasil",
+    "schedule": {
+      "start": "09:00",
+      "end": "16:00"
+    },
+    "seniority": "intern",
+    "required_tech": [],
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #085",
+    "title": "Estagio em Inteligencia Artificial",
+    "role_family": "estagio",
+    "source": "linkedin",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "intern",
+    "required_tech": [],
+    "recovered_from": "posting still live",
+    "outcome": "needs_human",
+    "note": "Requires creating an account on a third-party learning platform, which the pipeline routes to a human."
+  },
+  {
+    "id": "Empresa #013",
+    "title": "Estagio em Desenvolvimento de Software - Visao Computacional",
+    "role_family": "estagio",
+    "source": "sesame",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "intern",
+    "required_tech": [
+      "python"
+    ],
+    "recovered_from": "posting still live",
+    "outcome": "needs_human",
+    "note": "Passes the filters; stopped at a ten-question computer-vision and machine-learning test the candidate must answer."
+  },
+  {
+    "id": "Empresa #092",
+    "title": "Programa de Estagio - Atendimento (Banco de Talentos)",
+    "role_family": "estagio",
+    "source": "linkedin",
+    "work_model": "remote",
+    "country": "Brasil",
+    "schedule": {
+      "start": "11:00",
+      "end": "18:00"
+    },
+    "seniority": "intern",
+    "required_tech": [],
+    "accepted_fields": [
+      "Administracao",
+      "Ciencias Contabeis"
+    ],
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #136",
+    "title": "Estagio em Community Support",
+    "role_family": "estagio",
+    "source": "linkedin",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "intern",
+    "required_tech": [],
+    "accepted_fields": [
+      "Psicologia",
+      "Letras",
+      "Administracao",
+      "Turismo",
+      "Relacoes Internacionais",
+      "Comunicacao"
+    ],
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #091",
+    "title": "Estagio em Desenvolvimento de Software",
+    "role_family": "estagio",
+    "source": "linkedin",
+    "work_model": "onsite",
+    "city": "Sao Paulo",
+    "state": "SP",
+    "seniority": "intern",
+    "required_tech": [],
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #070",
+    "title": "Estagiario em Desenvolvimento de Software",
+    "role_family": "estagio",
+    "source": "linkedin",
+    "work_model": "onsite",
+    "city": "Campinas",
+    "state": "SP",
+    "schedule": {
+      "start": "13:00",
+      "end": "19:00"
+    },
+    "seniority": "intern",
+    "required_tech": [],
+    "recovered_from": "posting still live",
+    "outcome": "skipped",
+    "note": "Six hours a day, Monday to Friday; the exact start was not published, so a daytime block consistent with the posting is used and the location filter decides this one anyway."
+  },
+  {
+    "id": "Empresa #046",
+    "title": "Quality Assurance Internship (QA)",
+    "role_family": "qa",
+    "source": "linkedin",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "intern",
+    "required_tech": [
+      "automated testing"
+    ],
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #010",
+    "title": "Software Development Engineer Intern",
+    "role_family": "estagio",
+    "source": "linkedin",
+    "work_model": "onsite",
+    "city": "Sao Paulo",
+    "state": "SP",
+    "seniority": "intern",
+    "required_tech": [],
+    "required_years": {
+      "software development": 1
+    },
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #017",
+    "title": "Desenvolvedor Python (Junior) - Trabalho Remoto",
+    "role_family": "dev",
+    "source": "linkedin",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "junior",
+    "required_tech": [
+      "python"
+    ],
+    "required_years": {
+      "python": 1
+    },
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #029",
+    "title": "Junior/Pleno Front-End Engineer - Remote",
+    "role_family": "dev",
+    "source": "linkedin",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "junior",
+    "required_tech": [
+      "vue",
+      "graphql"
+    ],
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #081",
+    "title": "Tecnico de computador",
+    "role_family": "suporte",
+    "source": "linkedin",
+    "work_model": "onsite",
+    "city": "Lages",
+    "state": "SC",
+    "schedule": {
+      "start": "07:50",
+      "end": "18:08"
+    },
+    "seniority": "junior",
+    "required_tech": [
+      "manutencao de hardware",
+      "redes",
+      "cnh b"
+    ],
+    "recovered_from": "posting still live",
+    "outcome": "skipped",
+    "note": "The only onsite posting in the commutable city in the whole record. It still fails, on shift and on requirements."
+  },
+  {
+    "id": "Empresa #066",
+    "title": "Estagiario na area de TI",
+    "role_family": "estagio",
+    "source": "linkedin",
+    "work_model": "remote",
+    "country": "Brasil",
+    "schedule": {
+      "start": "09:00",
+      "end": "16:00"
+    },
+    "seniority": "intern",
+    "required_tech": [],
+    "recovered_from": "posting still live",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #073",
+    "title": "Talentos em Tecnologia (Banco de Talentos)",
+    "role_family": "dev",
+    "source": "gupy",
+    "work_model": "remote",
+    "country": "Brasil",
+    "seniority": "intern",
+    "required_tech": [],
+    "recovered_from": "proof artifact",
+    "outcome": "applied"
+  },
+  {
+    "id": "Empresa #097",
+    "title": "Analista de Dados e IA Jr",
+    "role_family": "dados",
+    "source": "indeed",
+    "work_model": "remote",
+    "country": "Brasil",
+    "schedule": {
+      "start": "08:00",
+      "end": "17:00"
+    },
+    "seniority": "junior",
+    "required_tech": [
+      "pyspark",
+      "mlops"
+    ],
+    "recovered_from": "archived note",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #050",
+    "title": "Auxiliar de Infraestrutura",
+    "role_family": "outro",
+    "source": "indeed",
+    "work_model": "onsite",
+    "city": "Correia Pinto",
+    "state": "SC",
+    "seniority": "junior",
+    "required_tech": [
+      "fibra optica",
+      "cftv",
+      "cabeamento estruturado",
+      "cnh b"
+    ],
+    "recovered_from": "archived note",
+    "outcome": "skipped"
+  },
+  {
+    "id": "Empresa #024",
+    "title": "Jovem Aprendiz e Estagiario em Supermercado",
+    "role_family": "estagio",
+    "source": "linkedin",
+    "work_model": "onsite",
+    "city": "Lages",
+    "state": "SC",
+    "seniority": "intern",
+    "required_tech": [],
+    "recovered_from": "archived note",
+    "outcome": "needs_human"
+  }
+]
