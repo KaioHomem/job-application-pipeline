@@ -1,5 +1,10 @@
 # job-application-pipeline
 
+[![CI](https://github.com/KaioHomem/job-application-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/KaioHomem/job-application-pipeline/actions/workflows/ci.yml)
+![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)
+![Dependencies: none](https://img.shields.io/badge/dependencies-standard%20library-green)
+[![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
+
 An auditable job-application pipeline: **screen → tailor → prove → track**.
 
 A job hunt run as a build pipeline. Every posting is screened against hard
@@ -186,6 +191,11 @@ Browser automation, PDF rendering and job-board scraping belong to the private
 operational layer and are not here. That layer also integrates a third-party
 application engine ([privacydied/job-application-skill](https://github.com/privacydied/job-application-skill));
 none of its code is in this repository.
+
+The reasoning behind the four decisions that shape this code — coded reasons,
+a gate that never repairs, the proof requirement and the zero-dependency rule —
+is written up in [docs/DECISIONS.md](docs/DECISIONS.md), including what each
+one cost.
 
 Built with AI assistance — that is how I work, and the commit history shows it.
 
