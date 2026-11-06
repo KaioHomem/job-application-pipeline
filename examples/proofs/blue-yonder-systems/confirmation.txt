@@ -1,0 +1,4 @@
+Fictional proof artifact for the sample tracker.
+Slug: blue-yonder-systems
+Captured: confirmation screen after submit.
+Text on screen: "Application submitted successfully."

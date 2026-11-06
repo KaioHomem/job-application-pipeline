@@ -1,0 +1,4 @@
+Fictional proof artifact for the sample tracker.
+Slug: fourth-qa
+Captured: confirmation screen after submit.
+Text on screen: "Application submitted successfully."

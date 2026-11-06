@@ -1,0 +1,21 @@
+date,company,role,source,url,status,next_action,proof,notes
+2026-09-08,Northwind Labs,Estagio em Desenvolvimento de Software,example,https://example.com/jobs/northwind-intern,applied,Wait for contact,proofs/northwind-intern/confirmation.txt,Remote. Shift 13:00-19:00 fits the availability window.
+2026-09-08,Contoso Delivery,Analista de Suporte Junior,example,https://example.com/jobs/contoso-support,skipped,,,[schedule] Shift 09:00-16:00 falls outside the availability window 12:00-22:00.
+2026-09-08,Fabrikam Systems,Desenvolvedor Front-end Junior,example,https://example.com/jobs/fabrikam-frontend,skipped,,,"[tech] Requires react, typescript; no evidence in the profile."
+2026-09-09,Tailspin Logistica,Auxiliar de TI,example,https://example.com/jobs/tailspin-it,skipped,,,[location] Onsite in Curitiba; outside the commutable area.
+2026-09-09,Adventure Works,Estagio em Dados,example,https://example.com/jobs/adventure-data,applied,Wait for contact,proofs/adventure-data/confirmation.txt,Onsite in a commutable city. Shift 14:00-20:00 fits.
+2026-09-09,Proseware,Engenheiro de Software Senior,example,https://example.com/jobs/proseware-senior,skipped,,,[seniority] Posting is senior; the profile targets up to junior.
+2026-09-10,Litware,Analista de Sistemas Junior,example,https://example.com/jobs/litware-analyst,skipped,,,[degree] A completed degree is mandatory; the candidate is still enrolled.
+2026-09-10,Wide World Importers,Estagio em Marketing Digital,example,https://example.com/jobs/wwi-marketing,skipped,,,"[field] Accepted fields are Marketing, Publicidade; the candidate studies Ciencia da Computacao."
+2026-09-10,Globex Remote,Junior Backend Engineer,example,https://example.com/jobs/globex-backend,skipped,,,[location] Remote from Portugal; the profile works from Brasil.
+2026-09-11,Trey Research,Estagio em Suporte,example,https://example.com/jobs/trey-support,skipped,,,[salary] Pays 900; the floor is 1500.
+2026-09-11,Fourth Coffee,Estagio em QA,example,https://example.com/jobs/fourth-qa,applied,Wait for contact,proofs/fourth-qa/confirmation.txt,Remote. Manual testing only; no automation framework required.
+2026-09-12,Lucerne Publishing,Talent Pool - Technology,example,https://example.com/jobs/lucerne-pool,applied,Wait for contact,proofs/lucerne-pool/confirmation.txt,Remote talent pool open to interns.
+2026-09-12,VanArsdel,Suporte Tecnico N1,example,https://example.com/jobs/vanarsdel-n1,skipped,,,[schedule] Shift 08:00-17:00 falls outside the availability window 12:00-22:00.
+2026-09-15,Relecloud,Estagio em Infraestrutura,example,https://example.com/jobs/relecloud-infra,skipped,,,"[tech] Requires linux, active directory; no evidence in the profile."
+2026-09-15,Woodgrove Bank,Estagio em Dados,example,https://example.com/jobs/woodgrove-data,needs_human,Candidate must create an account on the bank portal,,Portal requires account creation and a password. Automation stops here by design.
+2026-09-16,Alpine Ski House,Desenvolvedor Junior,example,https://example.com/jobs/alpine-dev,skipped,,,[closed] Posting is closed.
+2026-09-16,Margie Travel,Estagio em Atendimento,example,https://example.com/jobs/margie-support,skipped,,,"[field] Accepted fields are Turismo, Administracao; the candidate studies Ciencia da Computacao."
+2026-09-17,Blue Yonder Airlines,Estagio em Sistemas,example,https://example.com/jobs/blue-yonder-systems,applied,Wait for contact,proofs/blue-yonder-systems/confirmation.txt,Remote. Schedule confirmed by email before applying.
+2026-09-18,Coho Vineyard,Analista de Dados Junior,example,https://example.com/jobs/coho-data,rejected,,,Rejected after screening. CV stays in the talent pool.
+2026-09-18,Humongous Insurance,Estagio em TI,example,https://example.com/jobs/humongous-it,skipped,,,[location] Hybrid in Sao Paulo; outside the commutable area.
