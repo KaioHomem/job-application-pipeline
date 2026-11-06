@@ -7,6 +7,12 @@
 
 An auditable job-application pipeline: **screen → tailor → prove → track**.
 
+**[The Rejection Machine →](https://kaiohomem.github.io/job-application-pipeline/)** — the engine
+running in your browser. Edit the candidate's availability, locations, pay floor or seniority
+ceiling, and twenty-one real postings are screened again in front of you, with the cost of the trade
+named in words. The nine filters there are the ones in `src/pipeline/screening.py`, ported to
+JavaScript and pinned to it by a CI job that compares sixty decisions on verdict, code and message.
+
 A job hunt run as a build pipeline. Every posting is screened against hard
 filters before any effort is spent on it, every rejection records the rule that
 fired, every generated CV has to pass a gate that refuses to invent anything,

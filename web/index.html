@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Rejection Machine — 153 job postings, and why each one was refused</title>
+<meta name="description" content="Nine filters rejected 153 job postings and wrote down why. Edit the candidate and the same engine screens them again, live in the page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23333231'/><rect x='3' y='3' width='4' height='10' fill='%235c6b54'/></svg>">
+</head>
+<body>
+<a class="skip" href="#wall">Skip to the finding</a>
+
+<header class="hero">
+  <div class="shell hero__bar">
+    <span class="hero__mark">job-application-pipeline</span>
+    <a class="hero__repo" href="https://github.com/KaioHomem/job-application-pipeline">Read the code</a>
+  </div>
+
+  <div class="shell hero__stage">
+    <h1 class="hero__headline">
+      <span class="hero__line"><span>Edit the candidate.</span></span>
+      <span class="hero__line"><span>History re-runs.</span></span>
+    </h1>
+
+    <p class="hero__sub">Nine filters refused 153 job postings and wrote down why. These controls are the real ones.</p>
+
+    <p class="hero__readout" id="heroReadout" aria-live="polite">
+      <b id="heroPass">—</b> of <b id="heroTotal">—</b> detailed postings survive the filters.
+    </p>
+
+    <div class="chips" id="heroChips">
+      <div class="chip chip--window" data-ui>
+        <label class="chip__label" for="heroStart">
+          <span>Available from</span><span class="chip__value" id="heroStartValue">12:00</span>
+        </label>
+        <input type="range" id="heroStart" min="0" max="20" step="1" value="24">
+      </div>
+
+      <div class="chip chip--where" data-ui>
+        <span class="chip__label"><span>Onsite outside my city</span></span>
+        <div class="chip__switch" role="group" aria-label="Accept onsite work outside the home city">
+          <button type="button" id="heroCommuteNo" aria-pressed="true">No</button>
+          <button type="button" id="heroCommuteYes" aria-pressed="false">Yes</button>
+        </div>
+      </div>
+
+      <div class="chip chip--floor" data-ui>
+        <label class="chip__label" for="heroFloor">
+          <span>Pay floor</span><span class="chip__value" id="heroFloorValue">R$ 1.500</span>
+        </label>
+        <input type="range" id="heroFloor" min="0" max="4000" step="100" value="1500">
+      </div>
+    </div>
+  </div>
+</header>
+
+<p class="error" id="loadError" hidden></p>
+
+<main id="main">
+
+  <!-- Movement 1 ------------------------------------------------------- -->
+  <section class="section wall" id="wall" aria-labelledby="wallHead">
+    <div class="shell">
+      <figure class="band reveal">
+        <img src="assets/gretna-labour-exchange.jpg" width="1575" height="1186" loading="lazy" decoding="async"
+             alt="A crowd of people queuing outside a labour exchange building, early twentieth century.">
+        <figcaption class="small">A labour exchange, before any of this was a filter. The queue was the funnel.</figcaption>
+      </figure>
+
+      <h2 class="section__head reveal" id="wallHead" style="margin-top:4rem">What actually stops an application</h2>
+      <p class="wall__statement reveal" style="--delay:80ms">
+        Of <b id="wallSkipped">153</b> refused postings, <b id="wallWall">79</b> died on where the work is
+        or when the shift runs. Facts printed on the posting itself. Not skills.
+      </p>
+
+      <div class="wall__grid">
+        <div class="reveal" style="--delay:160ms">
+          <svg class="field" id="field" viewBox="0 0 760 420" role="img"
+               aria-labelledby="fieldTitle fieldDesc">
+            <title id="fieldTitle">189 postings, sorted by what happened to them</title>
+            <desc id="fieldDesc">Each mark is one posting. Marks are grouped by the first filter that
+              stopped it, with applications and postings awaiting a human shown separately.</desc>
+          </svg>
+          <p class="small" id="fieldNote" style="margin-top:1rem"></p>
+        </div>
+
+        <div class="reveal" style="--delay:240ms">
+          <h3 class="small" style="font-size:var(--step-body);font-weight:500;margin-bottom:0.75rem">
+            The record, 2026-09-08 to 2026-09-24
+          </h3>
+          <dl class="legend" id="legend"></dl>
+          <p class="note" style="margin-top:1.5rem">
+            Rows written before the tracker carried reason codes keep their reason as prose, so their
+            bucket is derived by keyword and marked as such. Thirty-nine resisted classification and
+            are published unattributed rather than forced into a bucket. That is the whole argument
+            for recording a code at the moment of the decision.
+          </p>
+
+          <figure style="margin:2rem 0 0">
+            <pre data-ui class="term"><code>$ python -m pipeline report --tracker tracker.csv
+
+Postings triaged: 189
+
+Funnel
+  skipped       153   81%
+  applied        27   14%
+  needs_human     7    4%
+  rejected        2    1%
+
+Proof coverage: 26/27 applications have an archived artifact
+  WARNING: an application without proof is not an application</code></pre>
+            <figcaption class="small" style="margin-top:0.5rem">
+              The command that produced the figures beside it. The warning on the last line is the
+              audit that made the proof rule compulsory.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Movement 2 ------------------------------------------------------- -->
+  <section class="section" aria-labelledby="machineHead">
+    <div class="shell">
+      <div class="machine__column">
+        <h2 class="section__head reveal" id="machineHead" style="font-size:clamp(1.75rem,1.2rem+1.6vw,2rem)">
+          How one posting is refused
+        </h2>
+
+        <p class="reveal" style="--delay:60ms;margin-top:3rem">
+          <b>Every filter runs.</b> The chain does not stop at the first failure, so a posting blocked
+          three ways reports all three. Hiding the rest would make the record cheaper to read and
+          wrong.
+        </p>
+
+        <p class="reveal" style="--delay:120ms">
+          <b>Each refusal carries a sentence.</b> A filter returns a code and a message, not a
+          boolean. The code is what the counts are built from; the message is for a human reading the
+          row six weeks later.
+        </p>
+
+        <p class="reveal" style="--delay:180ms">
+          <b>Nothing is resolved in my favour.</b> A posting that never published its shift is not
+          assumed to fit. It passes the filter and raises a flag, so a person confirms before
+          applying.
+        </p>
+
+        <figure class="inline-pic reveal" style="--delay:200ms">
+          <img src="assets/punch-card-sorter.jpg" width="1920" height="1453" loading="lazy" decoding="async"
+               alt="An electromechanical punch card sorter with a row of open output bins.">
+          <figcaption class="small">A card sorter drops each card into a bin by one rule at a time. This is the same
+            idea, with the bin written down.</figcaption>
+        </figure>
+
+        <div class="picker reveal" id="picker" role="group" aria-label="Choose a posting to screen" style="--delay:240ms"></div>
+
+        <div data-ui aria-live="polite">
+          <ol class="chain" id="chain"></ol>
+          <p class="verdict" id="verdict"></p>
+          <p class="flagline" id="flagline" hidden></p>
+        </div>
+
+        <p class="small" style="margin-top:1rem">
+          Twenty-one postings from the record carry every field a filter needs, so they can be
+          screened again. The other 168 cannot: the tracker never stored their shift or their stack.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Movement 3 ------------------------------------------------------- -->
+  <section class="section counter" aria-labelledby="counterHead">
+    <div class="shell">
+      <h2 class="section__head reveal" id="counterHead">Change the candidate, not the chart</h2>
+      <p class="lede reveal" style="--delay:80ms;margin-top:1.5rem;color:#d9d5d0">
+        Every filter below is the one in the repository. Move a control and all twenty-one postings
+        are screened again, with the cost of the trade named in words.
+      </p>
+
+      <div class="counter__grid">
+        <div class="panel reveal" style="--delay:140ms">
+          <div class="chip" data-ui>
+            <label class="chip__label" for="ctlStart">
+              <span>Available from</span><span class="chip__value" id="ctlStartValue">12:00</span>
+            </label>
+            <input type="range" id="ctlStart" min="0" max="20" step="1" value="24">
+          </div>
+
+          <div class="chip" data-ui>
+            <label class="chip__label" for="ctlEnd">
+              <span>Available until</span><span class="chip__value" id="ctlEndValue">22:00</span>
+            </label>
+            <input type="range" id="ctlEnd" min="28" max="48" step="1" value="44">
+          </div>
+
+          <div class="chip" data-ui>
+            <label class="chip__label" for="ctlFloor">
+              <span>Pay floor</span><span class="chip__value" id="ctlFloorValue">R$ 1.500</span>
+            </label>
+            <input type="range" id="ctlFloor" min="0" max="4000" step="100" value="1500">
+          </div>
+
+          <div class="chip" data-ui>
+            <span class="chip__label"><span>Onsite outside my city</span></span>
+            <div class="chip__switch" role="group" aria-label="Accept onsite work outside the home city">
+              <button type="button" id="ctlCommuteNo" aria-pressed="true">No</button>
+              <button type="button" id="ctlCommuteYes" aria-pressed="false">Yes</button>
+            </div>
+          </div>
+
+          <div class="chip" data-ui>
+            <span class="chip__label"><span>Seniority ceiling</span></span>
+            <div class="chip__switch" role="group" aria-label="Highest seniority to apply to">
+              <button type="button" data-seniority="intern" aria-pressed="false">Intern</button>
+              <button type="button" data-seniority="junior" aria-pressed="true">Junior</button>
+              <button type="button" data-seniority="mid" aria-pressed="false">Mid</button>
+            </div>
+          </div>
+
+          <button class="reset" type="button" id="reset">Back to the real profile</button>
+        </div>
+
+        <div class="reveal" style="--delay:200ms">
+          <p class="trade" id="trade" aria-live="polite"></p>
+          <div class="ledger" id="ledger"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof ------------------------------------------------------------ -->
+  <section class="section" aria-labelledby="proofHead">
+    <div class="shell">
+      <h2 class="proof__head reveal" id="proofHead">What stops<span>me lying</span></h2>
+
+      <table class="reveal" style="--delay:80ms">
+        <caption>Each constraint, what it costs, and the check that enforces it.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Constraint</th>
+            <th scope="col">Why it exists</th>
+            <th scope="col">Enforced by</th>
+            <th scope="col">Checks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Two implementations, one oracle</td>
+            <td>The page would otherwise drift from the engine it claims to be</td>
+            <td>CI screens the fixtures in Python and JavaScript and compares verdict, code and message</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>The gate fails, it never fixes</td>
+            <td>A validator that quietly repairs a CV teaches nothing about the generator</td>
+            <td>No write path, plus a test asserting the input is byte-identical afterwards</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>No application without proof</td>
+            <td>An audit found rows marked applied whose confirmation was never archived</td>
+            <td>The tracker raises at write time unless the proof file exists</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>A field that cannot be recovered keeps its posting out</td>
+            <td>Guessing a shift to make the page interactive is the fabrication the gate exists to stop</td>
+            <td>The engine's verdict must match the posting's real outcome</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>No personal data in the repository</td>
+            <td>Company names and contact details are not what makes the record useful</td>
+            <td>A CI job greps the tree for document, postal-code and phone patterns</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top:3rem;display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,22rem),1fr))">
+        <figure style="margin:0">
+          <pre data-ui class="term"><code>$ python scripts/gen_parity_expected.py
+wrote 60 decisions to tests/fixtures/parity_expected.json
+
+$ git diff --exit-code tests/fixtures/parity_expected.json
+$ node --test "web/tests/*.test.mjs"
+
+ok 1 - the JS port agrees with the Python oracle on every case
+ok 4 - an unpublished shift is a flag, never a silent pass
+# pass 18
+# fail 0</code></pre>
+          <figcaption class="small" style="margin-top:0.5rem">
+            The parity job. Twenty postings, three profiles, sixty decisions, compared on verdict,
+            code and message.
+          </figcaption>
+        </figure>
+
+        <figure style="margin:0">
+          <pre data-ui class="term"><code>$ python -m pipeline validate --cv tailored.txt
+
+TRUTH GATE
+  [PASS] 1. text extraction
+  [FAIL] 2. contained in master    11 orphan line(s)
+  [FAIL] 3. no unsupported claims  invented percentage metric
+  [FAIL] 5. only confirmed skills  ['go', 'rust', 'oracle']
+
+RESULT: REJECTED (8/12 checks passed)
+$ echo $?
+1</code></pre>
+          <figcaption class="small" style="margin-top:0.5rem">
+            The gate refusing an inflated CV. Nothing was edited; the file is byte-identical
+            afterwards.
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="note" style="margin-top:2.5rem">
+        Seventy-eight tests in all, run on Python 3.11, 3.12 and 3.13 at every push. The figures on
+        this page are computed in the browser from the published record; none is written into the
+        markup.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot__row foot__row--a">
+    <div class="tile">
+      <p style="font-size:var(--step-lead);line-height:1.2">
+        A job hunt run as a build pipeline: screen, tailor, prove, track.
+      </p>
+      <p class="small">MIT licensed. Built with AI assistance, and the commit history shows it.
+        Pictures: <a href="https://commons.wikimedia.org/w/index.php?curid=112917619">&ldquo;Gretna Labour Exchange&rdquo;</a>
+        by The Devil&rsquo;s Porridge Museum, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>;
+        <a href="https://commons.wikimedia.org/w/index.php?curid=1962628">&ldquo;Punch card sorter&rdquo;</a> by waelder,
+        <a href="https://creativecommons.org/licenses/by/2.5/">CC BY 2.5</a>, both via Wikimedia Commons.</p>
+    </div>
+    <nav class="tile" aria-label="Project">
+      <ul>
+        <li><a href="https://github.com/KaioHomem/job-application-pipeline">Repository</a></li>
+        <li><a href="https://github.com/KaioHomem/job-application-pipeline/blob/main/docs/DECISIONS.md">Design decisions</a></li>
+        <li><a href="https://github.com/KaioHomem/job-application-pipeline/actions">Continuous integration</a></li>
+        <li><a href="https://github.com/KaioHomem/job-application-pipeline/blob/main/README.md">The measured run</a></li>
+      </ul>
+      <span class="small">Four documents</span>
+    </nav>
+    <div class="tile">
+      <p>Lages, Santa Catarina</p>
+      <p class="small">Available 12:00 to 22:00, because the mornings are classes.</p>
+    </div>
+    <div class="tile">
+      <p><a href="https://github.com/KaioHomem">github.com/KaioHomem</a></p>
+      <p class="small">Kaio Felipe Homem</p>
+    </div>
+  </div>
+  <div class="foot__row foot__row--b">
+    <div class="tile tile--wordmark">The Rejection Machine</div>
+    <a class="tile tile--go" href="https://github.com/KaioHomem/job-application-pipeline">
+      Read the engine
+      <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="4">
+        <path d="M12 52 52 12M26 12h26v26"/>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>

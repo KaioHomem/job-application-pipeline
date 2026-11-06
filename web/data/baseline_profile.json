@@ -1,0 +1,30 @@
+{
+  "_comment": "The profile the page screens against. These are the decision rules already disclosed to every employer applied to. No address, no contact details, no document numbers.",
+  "name": "Baseline",
+  "city": "Lages",
+  "state": "SC",
+  "country": "Brasil",
+  "accepts_remote": true,
+  "onsite_cities": ["Lages"],
+  "availability": { "start": "12:00", "end": "22:00" },
+  "education": {
+    "status": "enrolled",
+    "field": "Ciencia da Computacao",
+    "expected_graduation": 2028
+  },
+  "max_seniority": "junior",
+  "min_monthly_salary": 1500,
+  "tech_years": {
+    "python": 0,
+    "java": 0,
+    "javascript": 0,
+    "html": 0,
+    "css": 0,
+    "sql": 0,
+    "mysql": 0,
+    "postgresql": 0,
+    "git": 0,
+    "rest apis": 0
+  },
+  "_tech_years_note": "0 means academic and self-directed practice with no professional experience. A technology absent from this map has no evidence at all, which is what the tech filter tests."
+}
