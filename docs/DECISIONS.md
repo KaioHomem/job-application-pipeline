@@ -1,7 +1,10 @@
 # Design decisions
 
-Four decisions shape this codebase. Each one cost something, and each one was
-made after the cheaper alternative had already failed in a real run.
+Six decisions shape this codebase. Each one cost something, and each one was
+made after the cheaper alternative had already failed in a real run. The last
+two were written during the week the funnel was published, which is why they
+read less tidily than the first four: #5 breaks #4 on purpose, and #6 exists
+because the hosted server failed its very first real call.
 
 ---
 
