@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from collections import Counter
 from typing import Any
 
@@ -164,22 +165,84 @@ def simulate_profile(changes: dict | None = None) -> dict:
     }
 
 
+def _normalize_schedule(raw: Any) -> dict[str, str] | None:
+    """Accept the three shapes a caller plausibly sends for a shift.
+
+    `Job.from_dict` wants {"start": "13:00", "end": "22:00"}. A model reading a
+    tool description writes "13:00-22:00" at least as often, and a list is the
+    next guess. All three mean the same shift, so all three are accepted here
+    rather than in the pipeline, which keeps one canonical shape on disk.
+    """
+    if raw in (None, "", {}, []):
+        return None
+    if isinstance(raw, dict):
+        if "start" in raw and "end" in raw:
+            return {"start": str(raw["start"]), "end": str(raw["end"])}
+        raise ValueError('schedule object needs both "start" and "end", as in {"start": "13:00", "end": "22:00"}')
+    if isinstance(raw, (list, tuple)):
+        if len(raw) == 2:
+            return {"start": str(raw[0]), "end": str(raw[1])}
+        raise ValueError('schedule list needs exactly two times, as in ["13:00", "22:00"]')
+    if isinstance(raw, str):
+        # Dashes split anywhere; word separators only between spaces, so "Noturno"
+        # is not torn apart at its own "to".
+        parts = [p.strip() for p in re.split(r"\s*[-–—]\s*|\s+(?:to|às|as|até)\s+", raw) if p.strip()]
+        if len(parts) == 2:
+            return {"start": parts[0], "end": parts[1]}
+        raise ValueError(f'cannot read {raw!r} as a shift; write it as "13:00-22:00"')
+    raise ValueError(f"schedule has type {type(raw).__name__}; expected a string, a list or an object")
+
+
+def _normalize_required_years(raw: Any) -> dict[str, float]:
+    """`required_years` is per technology, not one number for the whole role.
+
+    A bare number is the obvious thing to send and the wrong thing to guess at:
+    two years of Python and two years of anything are different postings. So
+    this refuses instead of spreading the number over the tech list.
+    """
+    if raw in (None, "", {}):
+        return {}
+    if isinstance(raw, dict):
+        return {str(k): float(v) for k, v in raw.items()}
+    if isinstance(raw, (int, float)):
+        raise ValueError(
+            f"required_years is per technology, not a single total; write "
+            f'{{"python": {float(raw):g}}} rather than {raw!r}'
+        )
+    raise ValueError(f"required_years has type {type(raw).__name__}; expected an object keyed by technology")
+
+
 def screen_posting(posting: dict, changes: dict | None = None) -> dict:
     """Run the nine filters over a posting the caller describes."""
+    if not isinstance(posting, dict):
+        return {"error": f"posting must be an object, not {type(posting).__name__}"}
     required = {"work_model"}
     missing = sorted(required - set(posting))
     if missing:
         return {"error": f"missing required field(s): {', '.join(missing)}"}
 
-    job = Job.from_dict(
-        {
-            "company": posting.get("company", "unnamed"),
-            "title": posting.get("title", "unnamed posting"),
-            "url": posting.get("url", "urn:posting:ad-hoc"),
-            **posting,
+    raw = {
+        "company": posting.get("company", "unnamed"),
+        "title": posting.get("title", "unnamed posting"),
+        "url": posting.get("url", "urn:posting:ad-hoc"),
+        **posting,
+    }
+    try:
+        raw["schedule"] = _normalize_schedule(raw.get("schedule"))
+        raw["required_years"] = _normalize_required_years(raw.get("required_years"))
+        job = Job.from_dict(raw)
+        decision = screen(job, _with_changes(_baseline(), changes or {}))
+    except (ValueError, TypeError, KeyError) as exc:
+        # An opaque "Error executing tool" teaches a caller nothing. Say what
+        # was wrong with the input so the next call can be right.
+        return {
+            "error": str(exc) or f"{type(exc).__name__} while reading the posting",
+            "hint": (
+                'work_model is required and must be "remote", "hybrid" or "onsite". '
+                'schedule is a shift such as "13:00-22:00". required_years is an object '
+                'keyed by technology, such as {"python": 1}.'
+            ),
         }
-    )
-    decision = screen(job, _with_changes(_baseline(), changes or {}))
     return {
         "verdict": decision.verdict,
         "reasons": [{"code": r.code, "message": r.message} for r in decision.reasons],

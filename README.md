@@ -199,7 +199,8 @@ Two JSON files, both with a committed example and neither containing real data.
 
 ## Tests
 
-31 tests, `pytest -q`. They cover each filter rejecting for its own reason,
+81 Python tests (`pytest -q`) and 18 JavaScript tests (`node --test web/tests/*.test.mjs`).
+They cover each filter rejecting for its own reason,
 `TimeWindow` containment at the boundaries, the gate approving a legitimate
 variant and rejecting an inflated one, orphan-line detection, the proof
 requirement, duplicate submission, and a check that the gate leaves its input
@@ -209,6 +210,22 @@ byte-identical.
 
 The same engine is also an MCP server, so an assistant can interrogate the
 funnel directly rather than reading a summary of it.
+
+**It is hosted, so there is nothing to install:**
+
+```
+https://job-application-pipeline-053k.onrender.com/mcp
+```
+
+Add that as a streamable-HTTP MCP server in any client that speaks the
+protocol and ask it about the funnel. `GET /health` reports the tool list and
+the number of postings the container actually loaded, so a broken deploy fails
+the check instead of serving empty answers.
+
+It runs on a free instance, which sleeps when idle — the first request after a
+quiet spell takes about a minute to wake it.
+
+To run it yourself instead:
 
 ```bash
 pip install -r mcp_server/requirements.txt

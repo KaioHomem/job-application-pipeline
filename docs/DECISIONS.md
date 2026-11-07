@@ -118,3 +118,35 @@ library and the pipeline, and is unit-tested without starting a server. The SDK
 appears in exactly one file, `mcp_server/server.py`, which is transport and
 nothing else. If the SDK breaks or the host dies, the answers still work and
 the tests still run.
+
+---
+
+## 6. A tool that refuses must say what was wrong
+
+**What happened:** the first call to the hosted `screen_posting` failed. The
+posting described a shift as `"13:00-22:00"`, the pipeline wants
+`{"start": "13:00", "end": "22:00"}`, and the SDK turned the resulting
+`TypeError` into one line: `Error executing tool screen_posting`.
+
+The wrong shape was a fair mistake — the tool description never said which
+shape it wanted. The unusable reply was the real defect. A caller who gets
+`Error executing tool` has no way to find out what to send next, so it either
+gives up or guesses again, and both outcomes look like the tool is broken.
+
+**What changed:** the boundary normalizes what a caller plausibly sends — a
+string, a two-element list or the canonical object all mean the same shift —
+and anything it still cannot read comes back as an error that names the field
+and shows a correct example. The tool descriptions now state each field's
+shape rather than only its name.
+
+`required_years` deliberately does *not* get the same leniency. A bare number
+is refused, because spreading "3 years" across a technology list would invent a
+requirement the posting never made, and this pipeline exists to not do that.
+Leniency about shape, never about meaning.
+
+**Where it stayed:** all of it in `mcp_server/tools.py`. `src/pipeline` keeps
+one canonical shape on disk, so the parity oracle and the committed data are
+untouched.
+
+**Cost:** two normalizing functions and seven tests at the boundary, to keep
+the pipeline's own input strict.

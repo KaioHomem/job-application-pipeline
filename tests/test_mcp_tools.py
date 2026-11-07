@@ -98,3 +98,67 @@ def test_screen_posting_honours_a_profile_change():
 def test_a_change_does_not_leak_into_the_next_call():
     simulate_profile({"availability": {"start": "08:00", "end": "22:00"}})
     assert simulate_profile()["gained"] == []
+
+
+# --- screen_posting accepts what a caller plausibly sends -------------------
+#
+# The hosted server returned a bare "Error executing tool" for a posting whose
+# schedule was the string "13:00-22:00". The shape was wrong, but the reply
+# taught the caller nothing, which is the worse half of the bug.
+
+
+def test_a_shift_written_as_a_string_is_screened():
+    result = screen_posting(
+        {"work_model": "remote", "schedule": "13:00-22:00", "seniority": "junior"}
+    )
+    assert "error" not in result, result
+    assert result["verdict"] in {"pass", "skip"}
+    assert not [r for r in result["reasons"] if r["code"] == "schedule"]
+
+
+def test_the_three_shift_shapes_agree():
+    shapes = [
+        "08:00-12:00",
+        ["08:00", "12:00"],
+        {"start": "08:00", "end": "12:00"},
+    ]
+    verdicts = {
+        screen_posting({"work_model": "remote", "schedule": s})["verdict"]
+        for s in shapes
+    }
+    assert len(verdicts) == 1, verdicts
+
+
+def test_a_morning_shift_still_collides():
+    result = screen_posting({"work_model": "remote", "schedule": "08:00-17:00"})
+    assert result["verdict"] == "skip"
+    assert "schedule" in {r["code"] for r in result["reasons"]}
+
+
+def test_an_unreadable_shift_explains_itself_instead_of_crashing():
+    result = screen_posting({"work_model": "remote", "schedule": "sometime"})
+    assert "error" in result
+    assert "sometime" in result["error"]
+    assert "13:00-22:00" in result["hint"]
+
+
+def test_required_years_as_a_bare_number_is_refused_not_guessed():
+    result = screen_posting(
+        {"work_model": "remote", "required_tech": ["python"], "required_years": 3}
+    )
+    assert "error" in result
+    assert "per technology" in result["error"]
+
+
+def test_required_years_per_technology_is_screened():
+    result = screen_posting(
+        {"work_model": "remote", "required_tech": ["python"], "required_years": {"python": 9}}
+    )
+    assert "error" not in result, result
+    assert "experience" in {r["code"] for r in result["reasons"]}
+
+
+def test_an_omitted_shift_raises_a_flag_rather_than_passing_silently():
+    result = screen_posting({"work_model": "remote"})
+    assert "error" not in result, result
+    assert "schedule?" in {f["code"] for f in result["flags"]}

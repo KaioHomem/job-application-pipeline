@@ -88,10 +88,23 @@ def simulate_profile(changes: dict | None = None) -> dict:
 def screen_posting(posting: dict, changes: dict | None = None) -> dict:
     """Run the nine filters over a posting you describe.
 
-    `posting` needs at least work_model (remote, hybrid or onsite). It may also
-    carry title, city, country, schedule, seniority, required_tech,
-    required_years, requires_completed_degree, accepted_fields, monthly_salary,
-    affirmative_only and closed.
+    `posting` needs at least work_model: "remote", "hybrid" or "onsite".
+
+    It may also carry title, company, city, state, country, seniority
+    ("intern", "junior", "mid", "senior", "staff", "principal", "manager"),
+    required_tech (a list), requires_completed_degree, accepted_fields,
+    monthly_salary, affirmative_only and closed, plus:
+
+      schedule        the shift, as "13:00-22:00", ["13:00", "22:00"] or
+                      {"start": "13:00", "end": "22:00"}. Omit it to say the
+                      posting published no shift, which raises a flag rather
+                      than passing silently.
+      required_years  professional years per technology, such as
+                      {"python": 2}. Not a single total: two years of one
+                      framework and two years of another are different asks.
+
+    A field this cannot read comes back as an error naming the field, not as a
+    verdict.
     """
     return _screen_posting(posting, changes)
 
