@@ -109,6 +109,14 @@ jobs:
           print("tools:", names)
           EOF
 
+      - name: The HTTP transport must answer a health check and an initialize
+        run: |
+          PYTHONPATH=src:. python mcp_server/server.py --http --host 127.0.0.1 --port 8791 &
+          for i in $(seq 1 30); do curl -sf http://127.0.0.1:8791/health >/dev/null && break; sleep 1; done
+          curl -sf http://127.0.0.1:8791/health | tee /dev/stderr | grep -q '"postings_in_record":189'
+          curl -sf -X POST http://127.0.0.1:8791/mcp             -H 'Content-Type: application/json'             -H 'Accept: application/json, text/event-stream'             -d '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2026-06-18","capabilities":{},"clientInfo":{"name":"ci","version":"1"}}}'             | grep -q '"serverInfo"'
+          echo "http transport ok"
+
   deploy:
     name: Publish the explorable
     needs: [test, parity, no-personal-data]

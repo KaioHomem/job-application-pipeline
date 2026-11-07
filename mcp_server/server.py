@@ -96,6 +96,28 @@ def screen_posting(posting: dict, changes: dict | None = None) -> dict:
     return _screen_posting(posting, changes)
 
 
+@server.custom_route("/health", methods=["GET"])
+async def health(request):  # noqa: ANN001, ARG001 — starlette passes the request
+    """A plain GET for a platform health check.
+
+    `/mcp` is not one. The streamable-HTTP endpoint rejects a bare GET that
+    carries no session and no event-stream Accept header, so a health check
+    pointed at it reports a perfectly healthy service as down. It also reads
+    the record, so a container that starts without its data fails the check
+    instead of serving empty answers.
+    """
+    from starlette.responses import JSONResponse
+
+    return JSONResponse(
+        {
+            "ok": True,
+            "server": server.name,
+            "tools": ["funnel_summary", "why_skipped", "simulate_profile", "screen_posting"],
+            "postings_in_record": _funnel_summary()["total_postings"],
+        }
+    )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--http", action="store_true", help="serve streamable HTTP instead of stdio")
